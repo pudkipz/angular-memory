@@ -1,1 +1,10 @@
 <p>board-view works!</p>
+
+<!-- TODO: set rows and cols programmatically -->
+<div class="board-view" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+@for (row of rows; track $index) {
+  @for (col of cols; track $index) {
+    <app-card />
+  }
+}
+</div>
