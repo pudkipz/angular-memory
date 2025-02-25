@@ -3,4 +3,5 @@ export interface Card {
     y: number;
     value: number;
     selected: boolean;
+    found: boolean;
 }

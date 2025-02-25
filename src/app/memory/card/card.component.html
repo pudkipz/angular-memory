@@ -1,4 +1,5 @@
-<div class="card" [style.background-color]="this.card.selected ? 'red' : 'gray'">
+<!-- <div class="card" [style.background-color]="this.card.selected ? 'red' : 'gray'"> -->
+<div [class]="this.card.found ? 'card-found' : (this.card.selected ? 'card-selected' : 'card-facedown')">
   <p>
     {{this.card.value}}
   </p>
