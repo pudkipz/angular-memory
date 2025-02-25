@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { GameService } from '../../game.service';
 
 @Component({
   selector: 'app-board-view',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './board-view.component.css'
 })
 export class BoardViewComponent {
-  cols = [0, 1, 2, 3,];
-  rows = [0, 1, 2, 3,];
+  gameService = inject(GameService);
+  cards = this.gameService.cards;
 }

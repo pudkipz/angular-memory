@@ -1,3 +1,5 @@
 .board-view {
     display: grid;
+    justify-content: space-evenly;
+    align-items: center;
 }

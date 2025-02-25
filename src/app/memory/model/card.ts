@@ -1,4 +1,5 @@
 export interface Card {
+    x: number;
+    y: number;
     value: number;
-    // tb added: images etc.
 }
