@@ -1,4 +1,4 @@
-<div class="board-view" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+<div class="board-view" style="grid-template-columns: repeat(5, 1fr);">
 @for (card of cards; track $index;) {
   <!-- TODO: Move click binding into app-card (to make sure hitbox is correct) -->
   <app-card 

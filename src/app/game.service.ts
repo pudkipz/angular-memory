@@ -7,16 +7,18 @@ import { images } from '../data/data';
 })
 export class GameService {
   cards: Card[] = [];
+  nRows = 4;
+  nCols = 5;
 
   constructor() {
     this.newGame();
   }
 
   newGame() {
-    const values = Array.from(Array(8).keys()).concat(Array.from(Array(8).keys()));
+    const values = Array.from(Array((this.nRows * this.nCols) / 2).keys()).concat(Array.from(Array((this.nRows * this.nCols) / 2).keys()));
     this.cards = [];
-    for (let y: number = 0; y < 4; y++) {
-      for (let x: number = 0; x < 4; x++) {
+    for (let y: number = 0; y < this.nRows; y++) {
+      for (let x: number = 0; x < this.nCols; x++) {
         const valueIndex = Math.floor(Math.random() * values.length);
         const value = values.splice(valueIndex, 1)[0];
         // console.log(values)
