@@ -1,3 +1,5 @@
-<div class="card">
-  <p>{{this.card.value}}</p>
+<div class="card" [style.background-color]="this.card.selected ? 'red' : 'gray'">
+  <p>
+    {{this.card.value}}
+  </p>
 </div>
