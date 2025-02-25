@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Card } from './memory/model/card';
+import { images } from '../data/data';
 
 @Injectable({
   providedIn: 'root'
@@ -19,8 +20,9 @@ export class GameService {
         const valueIndex = Math.floor(Math.random() * values.length);
         const value = values.splice(valueIndex, 1)[0];
         // console.log(values)
-        this.cards.push({x, y, value: value})
+        this.cards.push({x, y, value: value, image: images[value]})
       }
     }
+    console.log(this.cards)
   }
 }

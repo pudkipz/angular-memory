@@ -8,9 +8,5 @@ import { Card } from '../model/card';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  @Input() card!: Card;
-
-  // constructor(card: Card) {
-  //   this.card = card;
-  // 
+  @Input() card!: Card;  
 }

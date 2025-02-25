@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './game-view.component.css'
 })
 export class GameViewComponent {
-
 }
