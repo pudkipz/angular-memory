@@ -12,5 +12,5 @@ export class CardComponent {
 
   // constructor(card: Card) {
   //   this.card = card;
-  // }
+  // 
 }

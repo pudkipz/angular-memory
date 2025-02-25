@@ -19,7 +19,7 @@ export class GameService {
         const valueIndex = Math.floor(Math.random() * values.length);
         const value = values.splice(valueIndex, 1)[0];
         // console.log(values)
-        this.cards.push({x, y, value: value, selected: false, found: false})
+        this.cards.push({x, y, value: value})
       }
     }
   }
